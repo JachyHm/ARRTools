@@ -72,7 +72,7 @@ namespace ARRBetterMap
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.DefaultExt = ".sav";
             dlg.Filter = "RailroadsOnline save file (*.sav)|*.sav";
-            string arrDir = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "arr/saved/savegames/");
+            string arrDir = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"arr\saved\savegames\");
             if (Directory.Exists(arrDir))
                 dlg.InitialDirectory = arrDir;
 
